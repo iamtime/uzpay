@@ -1,0 +1,53 @@
+{
+    "name": "iamtime/uzpay",
+    "description": "Payme, Click, Uzum, Paynet and Octo (Visa, Mastercard) for Uzbekistan shops: merchant callbacks, Payme saved cards and recurring payments (Subscribe API), checkout links, fiscal receipt lines, a sandbox emulator.",
+    "type": "library",
+    "license": "MIT",
+    "homepage": "https://github.com/iamtime/uzpay",
+    "support": {
+        "issues": "https://github.com/iamtime/uzpay/issues",
+        "source": "https://github.com/iamtime/uzpay"
+    },
+    "keywords": [
+        "payme",
+        "paycom",
+        "click",
+        "uzum",
+        "paynet",
+        "octo",
+        "visa",
+        "mastercard",
+        "uzcard",
+        "humo",
+        "uzbekistan",
+        "payments",
+        "recurring",
+        "subscriptions",
+        "fiscal",
+        "mxik",
+        "ikpu"
+    ],
+    "require": {
+        "php": "^8.2",
+        "ext-mbstring": "*"
+    },
+    "require-dev": {
+        "pestphp/pest": "^3.0 || ^4.0"
+    },
+    "suggest": {
+        "ext-curl": "for the outgoing API calls of Octo and the Payme Subscribe API through Uzpay\\Http\\CurlTransport (or pass your own Uzpay\\Http\\Transport)"
+    },
+    "autoload": {
+        "psr-4": {
+            "Uzpay\\": "src/"
+        }
+    },
+    "scripts": {
+        "test": "pest"
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    }
+}
